@@ -23,7 +23,7 @@ public class Activity13_2b {
         String filePath = "src/resources/sample.xlsx";
 
         //Create an object of current class
-        Activity13_2a srcExcel = new Activity13_2a();
+        Activity13_2b srcExcel = new Activity13_2b();
 
         //Call read file method of the class to read data
         List<List<String>> data = srcExcel.readExcel(filePath);
@@ -63,7 +63,7 @@ public class Activity13_2b {
         message.accept();
 
         //Close the browser
-        driver.close();
+        driver.quit();
     }
 
     public List<List<String>> readExcel(String filePath) {
